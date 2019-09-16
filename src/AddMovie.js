@@ -19,7 +19,7 @@ const AddMovie = () => {
         e.preventDefault();
         if (name === '') return
         setMovies([...movies, { name: name, id: Date.now() }])
-        e.target.reset()
+        setName('');
     };
 
     return (
